@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: rover_arm_description
+    relative_path: urdf/rover_arm.urdf
+  srdf:
+    relative_path: config/rover_ackermann.srdf
+  package_settings:
+    author_name: ankit
+    author_email: ankitttkumar111@gmail.com
+    generated_timestamp: 1774752201
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
